@@ -1,6 +1,6 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
 
 
 
@@ -25,6 +25,7 @@ if (isset($_POST['submit'])) {
     $filterGender = filter_var($gender);
     $filterEmail = filter_var($email, FILTER_SANITIZE_EMAIL);
     $filterCountry = filter_var($country,);
+    $filterSubject = filter_var($subject);
     $filterMessage = filter_var($message);
     
     
@@ -36,7 +37,7 @@ if (isset($_POST['submit'])) {
     if (empty($filterLastname)) {
         $errors[] = 'Lastname is required';
     }
-    if ($gender = 0) {
+    if (empty($gender)) {
         $errors[] = 'Gender is required';
     }
     if (empty($filterEmail)) {
@@ -45,9 +46,7 @@ if (isset($_POST['submit'])) {
     if (empty($filterCountry)) {
         $errors[] = 'Country is required';
     }
-    if ($subject = 0) {
-        $errors[] = 'Subject is required';
-    }
+    
     if (empty($filterMessage)) {
         $errors[] = 'Message is required';
     }
@@ -60,7 +59,7 @@ if (isset($_POST['submit'])) {
         
         
         
-        echo "<h2>Thank you for your message!  $filterEmail</h2>";
+        echo "<h2>Thank you for your message!  $filterEmail $filterGender </h2>";
         // header('Location: index.php');
     
     }}
