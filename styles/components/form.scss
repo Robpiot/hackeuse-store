@@ -1,0 +1,27 @@
+.form {
+    background-color: #ccc;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  
+      input, select, textarea {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+  
+      .form__button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+    }
+  }
