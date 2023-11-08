@@ -59,9 +59,9 @@ if (isset($_POST['submit'])) {
         
         
         
-        echo "<h2>Thank you for your message!  $filterEmail $filterGender </h2>";
+        echo "<h2>Thank you for your message!  $filterEmail </h2>";
         // header('Location: index.php');
-    
+        include 'mail.php';
     }}
     }
     

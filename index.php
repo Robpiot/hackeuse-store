@@ -32,8 +32,8 @@
 
 <input type="text" name="last_name" placeholder="Last name" id="last_name" autocomplete="off" required>
 I am a:
-<input type="radio" name="genre" value="Femme"> Female
-<input type="radio" name="genre" value="Homme"> Male
+<input type="radio" name="gender" value="Femme"> Female
+<input type="radio" name="gender" value="Homme"> Male
 
 <input type="email" name="email" placeholder="Email" id="email" autocomplete="off" required>
 
